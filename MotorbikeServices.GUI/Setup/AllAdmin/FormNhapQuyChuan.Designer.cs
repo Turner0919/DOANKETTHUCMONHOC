@@ -1,5 +1,5 @@
 ﻿
-namespace MotorbikeServices.GUI.AdminControls
+namespace MotorbikeServices.GUI.Setup.AllAdmin
 {
     partial class FormNhapQuyChuan
     {

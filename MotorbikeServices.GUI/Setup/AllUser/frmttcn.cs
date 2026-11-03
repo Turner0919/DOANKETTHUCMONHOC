@@ -10,8 +10,8 @@ using System.Text;
 using System.Windows.Forms;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using Microsoft.EntityFrameworkCore;
-
-namespace MotorbikeServices.GUI.Setup
+using MotorbikeServices.GUI.Setup.AllUser;
+namespace MotorbikeServices.GUI.Setup.AllUser
 {
     public partial class frmttcn : Form
     {

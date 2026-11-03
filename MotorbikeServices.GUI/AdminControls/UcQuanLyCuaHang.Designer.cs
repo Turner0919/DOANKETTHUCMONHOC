@@ -107,13 +107,13 @@ namespace MotorbikeServices.GUI.AdminControls
             tlpMain.Location = new Point(0, 0);
             tlpMain.Margin = new Padding(0);
             tlpMain.Name = "tlpMain";
-            tlpMain.Padding = new Padding(22, 16, 22, 18);
+            tlpMain.Padding = new Padding(19, 12, 19, 14);
             tlpMain.RowCount = 4;
-            tlpMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 78F));
-            tlpMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 118F));
-            tlpMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 62F));
+            tlpMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 58F));
+            tlpMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 88F));
+            tlpMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 46F));
             tlpMain.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tlpMain.Size = new Size(1255, 597);
+            tlpMain.Size = new Size(1098, 448);
             tlpMain.TabIndex = 0;
             // 
             // pnlHeader
@@ -122,10 +122,10 @@ namespace MotorbikeServices.GUI.AdminControls
             pnlHeader.Controls.Add(lblTitle);
             pnlHeader.Controls.Add(lblDescription);
             pnlHeader.Dock = DockStyle.Fill;
-            pnlHeader.Location = new Point(22, 16);
+            pnlHeader.Location = new Point(19, 12);
             pnlHeader.Margin = new Padding(0);
             pnlHeader.Name = "pnlHeader";
-            pnlHeader.Size = new Size(1211, 78);
+            pnlHeader.Size = new Size(1060, 58);
             pnlHeader.TabIndex = 0;
             // 
             // lblTitle
@@ -135,7 +135,7 @@ namespace MotorbikeServices.GUI.AdminControls
             lblTitle.ForeColor = Color.FromArgb(25, 54, 87);
             lblTitle.Location = new Point(2, 0);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(298, 46);
+            lblTitle.Size = new Size(238, 37);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Quản lý cửa hàng";
             // 
@@ -144,9 +144,9 @@ namespace MotorbikeServices.GUI.AdminControls
             lblDescription.AutoSize = true;
             lblDescription.Font = new Font("Segoe UI", 9.5F);
             lblDescription.ForeColor = Color.FromArgb(105, 121, 140);
-            lblDescription.Location = new Point(5, 47);
+            lblDescription.Location = new Point(4, 35);
             lblDescription.Name = "lblDescription";
-            lblDescription.Size = new Size(424, 21);
+            lblDescription.Size = new Size(363, 17);
             lblDescription.TabIndex = 1;
             lblDescription.Text = "Theo dõi thông tin và trạng thái hoạt động của các cửa hàng";
             // 
@@ -161,12 +161,12 @@ namespace MotorbikeServices.GUI.AdminControls
             tlpStatistics.Controls.Add(pnlDangHoatDong, 1, 0);
             tlpStatistics.Controls.Add(pnlTamNgung, 2, 0);
             tlpStatistics.Dock = DockStyle.Fill;
-            tlpStatistics.Location = new Point(22, 94);
+            tlpStatistics.Location = new Point(19, 70);
             tlpStatistics.Margin = new Padding(0);
             tlpStatistics.Name = "tlpStatistics";
             tlpStatistics.RowCount = 1;
             tlpStatistics.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tlpStatistics.Size = new Size(1211, 118);
+            tlpStatistics.Size = new Size(1060, 88);
             tlpStatistics.TabIndex = 1;
             // 
             // pnlTongSo
@@ -175,11 +175,11 @@ namespace MotorbikeServices.GUI.AdminControls
             pnlTongSo.Controls.Add(lblTongSoValue);
             pnlTongSo.Controls.Add(lblTongSoTitle);
             pnlTongSo.Dock = DockStyle.Fill;
-            pnlTongSo.Location = new Point(0, 4);
-            pnlTongSo.Margin = new Padding(0, 4, 8, 4);
+            pnlTongSo.Location = new Point(0, 3);
+            pnlTongSo.Margin = new Padding(0, 3, 7, 3);
             pnlTongSo.Name = "pnlTongSo";
-            pnlTongSo.Padding = new Padding(16, 10, 12, 8);
-            pnlTongSo.Size = new Size(395, 110);
+            pnlTongSo.Padding = new Padding(14, 8, 10, 6);
+            pnlTongSo.Size = new Size(346, 82);
             pnlTongSo.TabIndex = 0;
             // 
             // lblTongSoValue
@@ -187,9 +187,9 @@ namespace MotorbikeServices.GUI.AdminControls
             lblTongSoValue.Dock = DockStyle.Fill;
             lblTongSoValue.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
             lblTongSoValue.ForeColor = Color.FromArgb(25, 54, 87);
-            lblTongSoValue.Location = new Point(16, 40);
+            lblTongSoValue.Location = new Point(14, 30);
             lblTongSoValue.Name = "lblTongSoValue";
-            lblTongSoValue.Size = new Size(367, 62);
+            lblTongSoValue.Size = new Size(322, 46);
             lblTongSoValue.TabIndex = 0;
             lblTongSoValue.Text = "0";
             lblTongSoValue.TextAlign = ContentAlignment.MiddleLeft;
@@ -199,9 +199,9 @@ namespace MotorbikeServices.GUI.AdminControls
             lblTongSoTitle.Dock = DockStyle.Top;
             lblTongSoTitle.Font = new Font("Segoe UI", 9F);
             lblTongSoTitle.ForeColor = Color.FromArgb(49, 87, 125);
-            lblTongSoTitle.Location = new Point(16, 10);
+            lblTongSoTitle.Location = new Point(14, 8);
             lblTongSoTitle.Name = "lblTongSoTitle";
-            lblTongSoTitle.Size = new Size(367, 30);
+            lblTongSoTitle.Size = new Size(322, 22);
             lblTongSoTitle.TabIndex = 1;
             lblTongSoTitle.Text = "TỔNG SỐ CỬA HÀNG";
             lblTongSoTitle.TextAlign = ContentAlignment.MiddleLeft;
@@ -212,11 +212,11 @@ namespace MotorbikeServices.GUI.AdminControls
             pnlDangHoatDong.Controls.Add(lblDangHoatDongValue);
             pnlDangHoatDong.Controls.Add(lblDangHoatDongTitle);
             pnlDangHoatDong.Dock = DockStyle.Fill;
-            pnlDangHoatDong.Location = new Point(407, 4);
-            pnlDangHoatDong.Margin = new Padding(4);
+            pnlDangHoatDong.Location = new Point(357, 3);
+            pnlDangHoatDong.Margin = new Padding(4, 3, 4, 3);
             pnlDangHoatDong.Name = "pnlDangHoatDong";
-            pnlDangHoatDong.Padding = new Padding(16, 10, 12, 8);
-            pnlDangHoatDong.Size = new Size(395, 110);
+            pnlDangHoatDong.Padding = new Padding(14, 8, 10, 6);
+            pnlDangHoatDong.Size = new Size(345, 82);
             pnlDangHoatDong.TabIndex = 1;
             // 
             // lblDangHoatDongValue
@@ -224,9 +224,9 @@ namespace MotorbikeServices.GUI.AdminControls
             lblDangHoatDongValue.Dock = DockStyle.Fill;
             lblDangHoatDongValue.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
             lblDangHoatDongValue.ForeColor = Color.FromArgb(35, 145, 83);
-            lblDangHoatDongValue.Location = new Point(16, 40);
+            lblDangHoatDongValue.Location = new Point(14, 30);
             lblDangHoatDongValue.Name = "lblDangHoatDongValue";
-            lblDangHoatDongValue.Size = new Size(367, 62);
+            lblDangHoatDongValue.Size = new Size(321, 46);
             lblDangHoatDongValue.TabIndex = 0;
             lblDangHoatDongValue.Text = "0";
             lblDangHoatDongValue.TextAlign = ContentAlignment.MiddleLeft;
@@ -236,9 +236,9 @@ namespace MotorbikeServices.GUI.AdminControls
             lblDangHoatDongTitle.Dock = DockStyle.Top;
             lblDangHoatDongTitle.Font = new Font("Segoe UI", 9F);
             lblDangHoatDongTitle.ForeColor = Color.FromArgb(43, 117, 76);
-            lblDangHoatDongTitle.Location = new Point(16, 10);
+            lblDangHoatDongTitle.Location = new Point(14, 8);
             lblDangHoatDongTitle.Name = "lblDangHoatDongTitle";
-            lblDangHoatDongTitle.Size = new Size(367, 30);
+            lblDangHoatDongTitle.Size = new Size(321, 22);
             lblDangHoatDongTitle.TabIndex = 1;
             lblDangHoatDongTitle.Text = "ĐANG HOẠT ĐỘNG";
             lblDangHoatDongTitle.TextAlign = ContentAlignment.MiddleLeft;
@@ -249,11 +249,11 @@ namespace MotorbikeServices.GUI.AdminControls
             pnlTamNgung.Controls.Add(lblTamNgungValue);
             pnlTamNgung.Controls.Add(lblTamNgungTitle);
             pnlTamNgung.Dock = DockStyle.Fill;
-            pnlTamNgung.Location = new Point(814, 4);
-            pnlTamNgung.Margin = new Padding(8, 4, 0, 4);
+            pnlTamNgung.Location = new Point(713, 3);
+            pnlTamNgung.Margin = new Padding(7, 3, 0, 3);
             pnlTamNgung.Name = "pnlTamNgung";
-            pnlTamNgung.Padding = new Padding(16, 10, 12, 8);
-            pnlTamNgung.Size = new Size(397, 110);
+            pnlTamNgung.Padding = new Padding(14, 8, 10, 6);
+            pnlTamNgung.Size = new Size(347, 82);
             pnlTamNgung.TabIndex = 2;
             // 
             // lblTamNgungValue
@@ -261,9 +261,9 @@ namespace MotorbikeServices.GUI.AdminControls
             lblTamNgungValue.Dock = DockStyle.Fill;
             lblTamNgungValue.Font = new Font("Segoe UI", 25F, FontStyle.Bold);
             lblTamNgungValue.ForeColor = Color.FromArgb(211, 128, 35);
-            lblTamNgungValue.Location = new Point(16, 40);
+            lblTamNgungValue.Location = new Point(14, 30);
             lblTamNgungValue.Name = "lblTamNgungValue";
-            lblTamNgungValue.Size = new Size(369, 62);
+            lblTamNgungValue.Size = new Size(323, 46);
             lblTamNgungValue.TabIndex = 0;
             lblTamNgungValue.Text = "0";
             lblTamNgungValue.TextAlign = ContentAlignment.MiddleLeft;
@@ -273,9 +273,9 @@ namespace MotorbikeServices.GUI.AdminControls
             lblTamNgungTitle.Dock = DockStyle.Top;
             lblTamNgungTitle.Font = new Font("Segoe UI", 9F);
             lblTamNgungTitle.ForeColor = Color.FromArgb(155, 93, 30);
-            lblTamNgungTitle.Location = new Point(16, 10);
+            lblTamNgungTitle.Location = new Point(14, 8);
             lblTamNgungTitle.Name = "lblTamNgungTitle";
-            lblTamNgungTitle.Size = new Size(369, 30);
+            lblTamNgungTitle.Size = new Size(323, 22);
             lblTamNgungTitle.TabIndex = 1;
             lblTamNgungTitle.Text = "TẠM NGỪNG HOẠT ĐỘNG";
             lblTamNgungTitle.TextAlign = ContentAlignment.MiddleLeft;
@@ -283,33 +283,33 @@ namespace MotorbikeServices.GUI.AdminControls
             // tlpFilter
             // 
             tlpFilter.ColumnCount = 5;
-            tlpFilter.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 80F));
+            tlpFilter.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 70F));
             tlpFilter.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tlpFilter.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 85F));
-            tlpFilter.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 220F));
-            tlpFilter.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 105F));
+            tlpFilter.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 74F));
+            tlpFilter.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 192F));
+            tlpFilter.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 92F));
             tlpFilter.Controls.Add(lblTimKiem, 0, 0);
             tlpFilter.Controls.Add(txtTimKiem, 1, 0);
             tlpFilter.Controls.Add(lblLocTrangThai, 2, 0);
             tlpFilter.Controls.Add(cboTrangThai, 3, 0);
             tlpFilter.Controls.Add(btnLamMoi, 4, 0);
             tlpFilter.Dock = DockStyle.Fill;
-            tlpFilter.Location = new Point(22, 212);
+            tlpFilter.Location = new Point(19, 158);
             tlpFilter.Margin = new Padding(0);
             tlpFilter.Name = "tlpFilter";
-            tlpFilter.Padding = new Padding(0, 8, 0, 5);
+            tlpFilter.Padding = new Padding(0, 6, 0, 4);
             tlpFilter.RowCount = 1;
             tlpFilter.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tlpFilter.Size = new Size(1211, 62);
+            tlpFilter.Size = new Size(1060, 46);
             tlpFilter.TabIndex = 2;
             // 
             // lblTimKiem
             // 
             lblTimKiem.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold);
             lblTimKiem.ForeColor = Color.FromArgb(25, 54, 87);
-            lblTimKiem.Location = new Point(3, 8);
+            lblTimKiem.Location = new Point(3, 6);
             lblTimKiem.Name = "lblTimKiem";
-            lblTimKiem.Size = new Size(74, 31);
+            lblTimKiem.Size = new Size(64, 23);
             lblTimKiem.TabIndex = 0;
             lblTimKiem.Text = "Tìm kiếm:";
             lblTimKiem.TextAlign = ContentAlignment.MiddleLeft;
@@ -319,20 +319,20 @@ namespace MotorbikeServices.GUI.AdminControls
             txtTimKiem.BorderStyle = BorderStyle.FixedSingle;
             txtTimKiem.Dock = DockStyle.Fill;
             txtTimKiem.Font = new Font("Segoe UI", 9.5F);
-            txtTimKiem.Location = new Point(80, 10);
-            txtTimKiem.Margin = new Padding(0, 2, 12, 2);
+            txtTimKiem.Location = new Point(70, 8);
+            txtTimKiem.Margin = new Padding(0, 2, 10, 2);
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.PlaceholderText = "Tên cửa hàng, tài khoản, địa chỉ...";
-            txtTimKiem.Size = new Size(709, 29);
+            txtTimKiem.Size = new Size(622, 24);
             txtTimKiem.TabIndex = 1;
             // 
             // lblLocTrangThai
             // 
             lblLocTrangThai.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold);
             lblLocTrangThai.ForeColor = Color.FromArgb(25, 54, 87);
-            lblLocTrangThai.Location = new Point(804, 8);
+            lblLocTrangThai.Location = new Point(705, 6);
             lblLocTrangThai.Name = "lblLocTrangThai";
-            lblLocTrangThai.Size = new Size(79, 31);
+            lblLocTrangThai.Size = new Size(68, 23);
             lblLocTrangThai.TabIndex = 2;
             lblLocTrangThai.Text = "Trạng thái:";
             lblLocTrangThai.TextAlign = ContentAlignment.MiddleLeft;
@@ -343,10 +343,10 @@ namespace MotorbikeServices.GUI.AdminControls
             cboTrangThai.DropDownStyle = ComboBoxStyle.DropDownList;
             cboTrangThai.Font = new Font("Segoe UI", 9.5F);
             cboTrangThai.Items.AddRange(new object[] { "Tất cả trạng thái", "Đang hoạt động", "Tạm ngừng hoạt động" });
-            cboTrangThai.Location = new Point(886, 10);
-            cboTrangThai.Margin = new Padding(0, 2, 12, 2);
+            cboTrangThai.Location = new Point(776, 8);
+            cboTrangThai.Margin = new Padding(0, 2, 10, 2);
             cboTrangThai.Name = "cboTrangThai";
-            cboTrangThai.Size = new Size(208, 29);
+            cboTrangThai.Size = new Size(182, 25);
             cboTrangThai.TabIndex = 3;
             // 
             // btnLamMoi
@@ -357,10 +357,10 @@ namespace MotorbikeServices.GUI.AdminControls
             btnLamMoi.FlatStyle = FlatStyle.Flat;
             btnLamMoi.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnLamMoi.ForeColor = Color.FromArgb(25, 54, 87);
-            btnLamMoi.Location = new Point(1106, 9);
+            btnLamMoi.Location = new Point(968, 7);
             btnLamMoi.Margin = new Padding(0, 1, 0, 1);
             btnLamMoi.Name = "btnLamMoi";
-            btnLamMoi.Size = new Size(105, 30);
+            btnLamMoi.Size = new Size(92, 22);
             btnLamMoi.TabIndex = 4;
             btnLamMoi.Text = "↻  Làm mới";
             btnLamMoi.UseVisualStyleBackColor = false;
@@ -401,8 +401,8 @@ namespace MotorbikeServices.GUI.AdminControls
             dgvCuaHang.Dock = DockStyle.Fill;
             dgvCuaHang.EnableHeadersVisualStyles = false;
             dgvCuaHang.GridColor = Color.FromArgb(226, 233, 241);
-            dgvCuaHang.Location = new Point(22, 277);
-            dgvCuaHang.Margin = new Padding(0, 3, 0, 0);
+            dgvCuaHang.Location = new Point(19, 206);
+            dgvCuaHang.Margin = new Padding(0, 2, 0, 0);
             dgvCuaHang.MultiSelect = false;
             dgvCuaHang.Name = "dgvCuaHang";
             dgvCuaHang.ReadOnly = true;
@@ -410,7 +410,7 @@ namespace MotorbikeServices.GUI.AdminControls
             dgvCuaHang.RowHeadersWidth = 51;
             dgvCuaHang.RowTemplate.Height = 42;
             dgvCuaHang.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvCuaHang.Size = new Size(1211, 302);
+            dgvCuaHang.Size = new Size(1060, 228);
             dgvCuaHang.TabIndex = 3;
             // 
             // colThaoTac
@@ -432,14 +432,15 @@ namespace MotorbikeServices.GUI.AdminControls
             // 
             // UcQuanLyCuaHang
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(245, 248, 252);
             Controls.Add(tlpMain);
             Font = new Font("Segoe UI", 9F);
-            MinimumSize = new Size(800, 500);
+            Margin = new Padding(3, 2, 3, 2);
+            MinimumSize = new Size(700, 375);
             Name = "UcQuanLyCuaHang";
-            Size = new Size(1255, 597);
+            Size = new Size(1098, 448);
             tlpMain.ResumeLayout(false);
             pnlHeader.ResumeLayout(false);
             pnlHeader.PerformLayout();

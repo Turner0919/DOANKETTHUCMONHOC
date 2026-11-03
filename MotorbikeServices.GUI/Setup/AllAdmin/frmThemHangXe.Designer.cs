@@ -1,6 +1,6 @@
 ﻿using static System.Net.Mime.MediaTypeNames;
 
-namespace MotorbikeServices.GUI
+namespace MotorbikeServices.GUI.Setup.AllAdmin
 {
     partial class frmThemHangXe
     {

@@ -1,6 +1,6 @@
 ﻿using System.Security.Principal;
 
-namespace MotorbikeServices.GUI.Setup
+namespace MotorbikeServices.GUI.Setup.AllAdmin
 {
     partial class frmaccountadmin
     {
@@ -32,6 +32,7 @@ namespace MotorbikeServices.GUI.Setup
         {
             tlpMain = new TableLayoutPanel();
             pnlHeader = new Panel();
+            btnDangXuat = new Button();
             btnProfile = new Button();
             lblSubtitle = new Label();
             lblLogo = new Label();
@@ -51,7 +52,7 @@ namespace MotorbikeServices.GUI.Setup
             // tlpMain
             // 
             tlpMain.ColumnCount = 2;
-            tlpMain.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 260F));
+            tlpMain.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 228F));
             tlpMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tlpMain.Controls.Add(pnlHeader, 0, 0);
             tlpMain.Controls.Add(pnlSidebar, 0, 1);
@@ -61,15 +62,16 @@ namespace MotorbikeServices.GUI.Setup
             tlpMain.Margin = new Padding(0);
             tlpMain.Name = "tlpMain";
             tlpMain.RowCount = 2;
-            tlpMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 80F));
+            tlpMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 60F));
             tlpMain.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tlpMain.Size = new Size(1082, 603);
+            tlpMain.Size = new Size(948, 458);
             tlpMain.TabIndex = 0;
             // 
             // pnlHeader
             // 
             pnlHeader.BackColor = Color.FromArgb(21, 54, 91);
             tlpMain.SetColumnSpan(pnlHeader, 2);
+            pnlHeader.Controls.Add(btnDangXuat);
             pnlHeader.Controls.Add(btnProfile);
             pnlHeader.Controls.Add(lblSubtitle);
             pnlHeader.Controls.Add(lblLogo);
@@ -77,8 +79,21 @@ namespace MotorbikeServices.GUI.Setup
             pnlHeader.Location = new Point(0, 0);
             pnlHeader.Margin = new Padding(0);
             pnlHeader.Name = "pnlHeader";
-            pnlHeader.Size = new Size(1082, 80);
+            pnlHeader.Size = new Size(948, 60);
             pnlHeader.TabIndex = 0;
+            // 
+            // btnDangXuat
+            // 
+            btnDangXuat.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnDangXuat.BackColor = Color.PaleTurquoise;
+            btnDangXuat.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDangXuat.Location = new Point(843, 10);
+            btnDangXuat.Name = "btnDangXuat";
+            btnDangXuat.Size = new Size(93, 39);
+            btnDangXuat.TabIndex = 4;
+            btnDangXuat.Text = "ĐĂNG XUẤT";
+            btnDangXuat.UseVisualStyleBackColor = false;
+            btnDangXuat.Click += btnDangXuat_Click;
             // 
             // btnProfile
             // 
@@ -87,9 +102,10 @@ namespace MotorbikeServices.GUI.Setup
             btnProfile.FlatStyle = FlatStyle.Flat;
             btnProfile.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnProfile.ForeColor = Color.White;
-            btnProfile.Location = new Point(979, 16);
+            btnProfile.Location = new Point(764, 16);
+            btnProfile.Margin = new Padding(3, 2, 3, 2);
             btnProfile.Name = "btnProfile";
-            btnProfile.Size = new Size(100, 36);
+            btnProfile.Size = new Size(88, 27);
             btnProfile.TabIndex = 2;
             btnProfile.Text = "Admin";
             btnProfile.UseVisualStyleBackColor = true;
@@ -100,9 +116,9 @@ namespace MotorbikeServices.GUI.Setup
             lblSubtitle.BackColor = Color.Transparent;
             lblSubtitle.Font = new Font("Segoe UI Semibold", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblSubtitle.ForeColor = Color.LightSteelBlue;
-            lblSubtitle.Location = new Point(194, 30);
+            lblSubtitle.Location = new Point(183, 20);
             lblSubtitle.Name = "lblSubtitle";
-            lblSubtitle.Size = new Size(117, 17);
+            lblSubtitle.Size = new Size(96, 13);
             lblSubtitle.TabIndex = 1;
             lblSubtitle.Text = "ADMINISTRATION";
             // 
@@ -112,9 +128,9 @@ namespace MotorbikeServices.GUI.Setup
             lblLogo.BackColor = Color.Transparent;
             lblLogo.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblLogo.ForeColor = Color.White;
-            lblLogo.Location = new Point(20, 14);
+            lblLogo.Location = new Point(18, 10);
             lblLogo.Name = "lblLogo";
-            lblLogo.Size = new Size(168, 38);
+            lblLogo.Size = new Size(169, 30);
             lblLogo.TabIndex = 0;
             lblLogo.Text = "DAIDAIMOTOR";
             // 
@@ -128,10 +144,10 @@ namespace MotorbikeServices.GUI.Setup
             pnlSidebar.Controls.Add(btnDashboard);
             pnlSidebar.Controls.Add(lblMenuTitle);
             pnlSidebar.Dock = DockStyle.Fill;
-            pnlSidebar.Location = new Point(0, 80);
+            pnlSidebar.Location = new Point(0, 60);
             pnlSidebar.Margin = new Padding(0);
             pnlSidebar.Name = "pnlSidebar";
-            pnlSidebar.Size = new Size(260, 523);
+            pnlSidebar.Size = new Size(228, 398);
             pnlSidebar.TabIndex = 1;
             // 
             // btnCuaHang
@@ -141,10 +157,11 @@ namespace MotorbikeServices.GUI.Setup
             btnCuaHang.FlatStyle = FlatStyle.Flat;
             btnCuaHang.Font = new Font("Segoe UI", 9F);
             btnCuaHang.ForeColor = Color.White;
-            btnCuaHang.Location = new Point(10, 255);
+            btnCuaHang.Location = new Point(9, 191);
+            btnCuaHang.Margin = new Padding(3, 2, 3, 2);
             btnCuaHang.Name = "btnCuaHang";
-            btnCuaHang.Padding = new Padding(12, 0, 4, 0);
-            btnCuaHang.Size = new Size(240, 44);
+            btnCuaHang.Padding = new Padding(10, 0, 4, 0);
+            btnCuaHang.Size = new Size(210, 33);
             btnCuaHang.TabIndex = 5;
             btnCuaHang.Text = "🏪   Quản lý cửa hàng";
             btnCuaHang.TextAlign = ContentAlignment.MiddleLeft;
@@ -158,10 +175,11 @@ namespace MotorbikeServices.GUI.Setup
             btnAccount.FlatStyle = FlatStyle.Flat;
             btnAccount.Font = new Font("Segoe UI", 9F);
             btnAccount.ForeColor = Color.White;
-            btnAccount.Location = new Point(10, 205);
+            btnAccount.Location = new Point(9, 154);
+            btnAccount.Margin = new Padding(3, 2, 3, 2);
             btnAccount.Name = "btnAccount";
-            btnAccount.Padding = new Padding(12, 0, 4, 0);
-            btnAccount.Size = new Size(240, 44);
+            btnAccount.Padding = new Padding(10, 0, 4, 0);
+            btnAccount.Size = new Size(210, 33);
             btnAccount.TabIndex = 0;
             btnAccount.Text = "♙   Quản lý tài khoản";
             btnAccount.TextAlign = ContentAlignment.MiddleLeft;
@@ -175,10 +193,11 @@ namespace MotorbikeServices.GUI.Setup
             btnQuyChuan.FlatStyle = FlatStyle.Flat;
             btnQuyChuan.Font = new Font("Segoe UI", 9F);
             btnQuyChuan.ForeColor = Color.White;
-            btnQuyChuan.Location = new Point(10, 155);
+            btnQuyChuan.Location = new Point(9, 116);
+            btnQuyChuan.Margin = new Padding(3, 2, 3, 2);
             btnQuyChuan.Name = "btnQuyChuan";
-            btnQuyChuan.Padding = new Padding(12, 0, 4, 0);
-            btnQuyChuan.Size = new Size(240, 44);
+            btnQuyChuan.Padding = new Padding(10, 0, 4, 0);
+            btnQuyChuan.Size = new Size(210, 33);
             btnQuyChuan.TabIndex = 3;
             btnQuyChuan.Text = "⚙   Quy chuẩn bảo dưỡng";
             btnQuyChuan.TextAlign = ContentAlignment.MiddleLeft;
@@ -192,10 +211,11 @@ namespace MotorbikeServices.GUI.Setup
             btnHangXe.FlatStyle = FlatStyle.Flat;
             btnHangXe.Font = new Font("Segoe UI", 9F);
             btnHangXe.ForeColor = Color.White;
-            btnHangXe.Location = new Point(10, 105);
+            btnHangXe.Location = new Point(9, 79);
+            btnHangXe.Margin = new Padding(3, 2, 3, 2);
             btnHangXe.Name = "btnHangXe";
-            btnHangXe.Padding = new Padding(12, 0, 4, 0);
-            btnHangXe.Size = new Size(240, 44);
+            btnHangXe.Padding = new Padding(10, 0, 4, 0);
+            btnHangXe.Size = new Size(210, 33);
             btnHangXe.TabIndex = 2;
             btnHangXe.Text = "🚘   Hãng xe và dòng xe";
             btnHangXe.TextAlign = ContentAlignment.MiddleLeft;
@@ -210,10 +230,11 @@ namespace MotorbikeServices.GUI.Setup
             btnDashboard.FlatStyle = FlatStyle.Flat;
             btnDashboard.Font = new Font("Segoe UI", 9F);
             btnDashboard.ForeColor = Color.White;
-            btnDashboard.Location = new Point(10, 55);
+            btnDashboard.Location = new Point(9, 41);
+            btnDashboard.Margin = new Padding(3, 2, 3, 2);
             btnDashboard.Name = "btnDashboard";
-            btnDashboard.Padding = new Padding(12, 0, 4, 0);
-            btnDashboard.Size = new Size(240, 44);
+            btnDashboard.Padding = new Padding(10, 0, 4, 0);
+            btnDashboard.Size = new Size(210, 33);
             btnDashboard.TabIndex = 1;
             btnDashboard.Text = "▦   Tổng quan";
             btnDashboard.TextAlign = ContentAlignment.MiddleLeft;
@@ -226,29 +247,31 @@ namespace MotorbikeServices.GUI.Setup
             lblMenuTitle.BackColor = Color.Transparent;
             lblMenuTitle.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblMenuTitle.ForeColor = Color.LightSteelBlue;
-            lblMenuTitle.Location = new Point(18, 24);
+            lblMenuTitle.Location = new Point(16, 18);
             lblMenuTitle.Name = "lblMenuTitle";
-            lblMenuTitle.Size = new Size(155, 20);
+            lblMenuTitle.Size = new Size(121, 15);
             lblMenuTitle.TabIndex = 0;
             lblMenuTitle.Text = "QUẢN LÝ HỆ THỐNG";
             // 
             // pnlContent
             // 
             pnlContent.Dock = DockStyle.Fill;
-            pnlContent.Location = new Point(263, 83);
+            pnlContent.Location = new Point(231, 62);
+            pnlContent.Margin = new Padding(3, 2, 3, 2);
             pnlContent.Name = "pnlContent";
-            pnlContent.Padding = new Padding(20);
-            pnlContent.Size = new Size(816, 517);
+            pnlContent.Padding = new Padding(18, 15, 18, 15);
+            pnlContent.Size = new Size(714, 394);
             pnlContent.TabIndex = 2;
             // 
             // frmaccountadmin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(245, 247, 251);
-            ClientSize = new Size(1082, 603);
+            ClientSize = new Size(948, 458);
             Controls.Add(tlpMain);
-            MinimumSize = new Size(1100, 650);
+            Margin = new Padding(3, 2, 3, 2);
+            MinimumSize = new Size(964, 497);
             Name = "frmaccountadmin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "DAIDAIMOTOR Admin";
@@ -276,5 +299,6 @@ namespace MotorbikeServices.GUI.Setup
         private Button btnQuyChuan;
         private Button btnAccount;
         private Button btnCuaHang;
+        private Button btnDangXuat;
     }
 }

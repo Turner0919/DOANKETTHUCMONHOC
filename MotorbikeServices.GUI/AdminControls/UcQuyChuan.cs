@@ -5,7 +5,7 @@ using System;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-
+using MotorbikeServices.GUI.Setup.AllAdmin;
 namespace MotorbikeServices.GUI.AdminControls
 {
     public partial class UcQuyChuan : UserControl

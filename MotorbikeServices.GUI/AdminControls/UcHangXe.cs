@@ -1,7 +1,6 @@
-﻿
+﻿using MotorbikeServices.GUI.Setup.AllAdmin;
 using Microsoft.EntityFrameworkCore;
 using MotorbikeServices.DAL.Models;
-using MotorbikeServices.GUI.Setup;
 using System;
 using System.Linq;
 using System.Windows.Forms;

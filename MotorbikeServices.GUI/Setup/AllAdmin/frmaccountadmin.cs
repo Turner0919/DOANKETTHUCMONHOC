@@ -2,8 +2,8 @@
 using System.Windows.Forms;
 using MotorbikeServices.GUI.AdminControls;
 using System.Drawing;
-
-namespace MotorbikeServices.GUI.Setup
+using MotorbikeServices.GUI.Setup.AllAdmin;
+namespace MotorbikeServices.GUI.Setup.AllAdmin
 {
     public partial class frmaccountadmin : Form
     {
@@ -203,6 +203,12 @@ namespace MotorbikeServices.GUI.Setup
             LoadPage(new UcQuanLyCuaHang());
 
             SetActiveButton(btnCuaHang);
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Đăng xuất thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
         }
     }
 }

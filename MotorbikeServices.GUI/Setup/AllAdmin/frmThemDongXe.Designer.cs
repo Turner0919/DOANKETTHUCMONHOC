@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace MotorbikeServices.GUI.Setup
+namespace MotorbikeServices.GUI.Setup.AllAdmin
 {
     partial class frmThemDongXe
     {

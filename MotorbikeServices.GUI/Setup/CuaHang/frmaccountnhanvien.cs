@@ -49,6 +49,7 @@ namespace MotorbikeServices.GUI.Setup.CuaHang
 
         private void mnuDangXuat_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Đăng xuất thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }
 

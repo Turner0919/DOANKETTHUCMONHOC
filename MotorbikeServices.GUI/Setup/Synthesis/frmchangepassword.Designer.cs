@@ -1,4 +1,4 @@
-﻿namespace MotorbikeServices.GUI.SETUP
+﻿namespace MotorbikeServices.GUI.Setup.Synthesis
 {
     partial class frmchangepassword
     {

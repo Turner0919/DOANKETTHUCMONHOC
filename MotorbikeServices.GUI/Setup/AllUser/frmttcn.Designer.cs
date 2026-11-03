@@ -1,4 +1,4 @@
-﻿namespace MotorbikeServices.GUI.Setup
+﻿namespace MotorbikeServices.GUI.Setup.AllUser
 {
     partial class frmttcn
     {
@@ -330,10 +330,12 @@
             // dtpNgaySinh
             // 
             dtpNgaySinh.Anchor = AnchorStyles.None;
+            dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
+            dtpNgaySinh.Format = DateTimePickerFormat.Custom;
             dtpNgaySinh.Location = new Point(229, 61);
             dtpNgaySinh.Margin = new Padding(3, 2, 3, 2);
             dtpNgaySinh.Name = "dtpNgaySinh";
-            dtpNgaySinh.Size = new Size(219, 23);
+            dtpNgaySinh.Size = new Size(165, 23);
             dtpNgaySinh.TabIndex = 12;
             // 
             // label3

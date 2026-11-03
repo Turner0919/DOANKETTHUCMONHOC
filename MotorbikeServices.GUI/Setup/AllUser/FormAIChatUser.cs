@@ -6,8 +6,10 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Threading.Tasks;
+using MotorbikeServices.GUI.Setup.AllUser;
 
-namespace MotorbikeServices.GUI.Setup
+namespace MotorbikeServices.GUI.Setup.AllUser
 {
     public partial class FormAIChatUser : Form
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
-
-namespace MotorbikeServices.GUI.Setup
+using MotorbikeServices.GUI.Setup.AllAdmin;
+namespace MotorbikeServices.GUI.Setup.AllAdmin
 {
     public partial class FormNhapTaiKhoan : Form
     {

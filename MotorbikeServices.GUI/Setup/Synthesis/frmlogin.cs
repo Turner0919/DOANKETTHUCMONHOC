@@ -8,7 +8,10 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using MotorbikeServices.GUI.Setup.CuaHang;
-namespace MotorbikeServices.GUI.SETUP
+using MotorbikeServices.GUI.Setup.AllAdmin;
+using MotorbikeServices.GUI.Setup.Synthesis;
+using MotorbikeServices.GUI.Setup.AllUser;
+namespace MotorbikeServices.GUI.Setup.Synthesis
 {
     public partial class frmlogin : Form
     {

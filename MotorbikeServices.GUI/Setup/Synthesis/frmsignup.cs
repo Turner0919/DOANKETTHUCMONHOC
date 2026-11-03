@@ -6,8 +6,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-
-namespace MotorbikeServices.GUI.SETUP
+using MotorbikeServices.GUI.Setup.Synthesis;
+namespace MotorbikeServices.GUI.Setup.Synthesis
 {
     public partial class frmsignup : Form
     {

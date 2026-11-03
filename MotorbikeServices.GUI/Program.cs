@@ -1,20 +1,10 @@
-using MotorbikeServices.GUI.SETUP;
+using MotorbikeServices.GUI.Setup.Synthesis;
 
 namespace MotorbikeServices.GUI
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
-        /*[STAThread]
-        static void Main()
-        {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new frmlogin());
-        }*/
+        [STAThread]
         static void Main()
         {
             // Giữ nguyên dòng khởi tạo cấu hình giao diện của .NET
@@ -27,9 +17,8 @@ namespace MotorbikeServices.GUI
             });
 
             secondLoginThread.SetApartmentState(System.Threading.ApartmentState.STA);
-            secondLoginThread.Start(); // Bật luồng phụ
+            secondLoginThread.Start();
 
-            // 2. Mở FormLogin thứ 1 trên luồng chính
             Application.Run(new frmlogin());
         }
     }

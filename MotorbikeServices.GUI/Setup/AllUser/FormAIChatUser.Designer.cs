@@ -1,4 +1,4 @@
-﻿namespace MotorbikeServices.GUI.Setup
+﻿namespace MotorbikeServices.GUI.Setup.AllUser
 {
     partial class FormAIChatUser
     {

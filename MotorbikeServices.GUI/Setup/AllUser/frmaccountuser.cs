@@ -1,4 +1,4 @@
-﻿using MotorbikeServices.GUI.SETUP;
+﻿using MotorbikeServices.GUI.Setup.Synthesis;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

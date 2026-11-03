@@ -3,8 +3,8 @@ using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Forms;
-
-namespace MotorbikeServices.GUI.AdminControls
+using MotorbikeServices.GUI.Setup.AllAdmin;
+namespace MotorbikeServices.GUI.Setup.AllAdmin
 {
     public partial class FormNhapQuyChuan : Form
     {

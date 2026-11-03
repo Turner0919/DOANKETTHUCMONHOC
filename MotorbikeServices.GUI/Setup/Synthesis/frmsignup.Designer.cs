@@ -1,4 +1,4 @@
-﻿namespace MotorbikeServices.GUI.SETUP
+﻿namespace MotorbikeServices.GUI.Setup.Synthesis
 {
     partial class frmsignup
     {
@@ -62,10 +62,11 @@
             tableLayoutPanel1.Controls.Add(panel2, 0, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(1066, 582);
+            tableLayoutPanel1.Size = new Size(933, 443);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -89,9 +90,10 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(536, 3);
+            panel1.Location = new Point(469, 2);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(527, 576);
+            panel1.Size = new Size(461, 439);
             panel1.TabIndex = 0;
             // 
             // btnHuy
@@ -99,9 +101,10 @@
             btnHuy.BackColor = Color.DarkGray;
             btnHuy.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
             btnHuy.ForeColor = SystemColors.ButtonHighlight;
-            btnHuy.Location = new Point(260, 496);
+            btnHuy.Location = new Point(228, 372);
+            btnHuy.Margin = new Padding(3, 2, 3, 2);
             btnHuy.Name = "btnHuy";
-            btnHuy.Size = new Size(146, 52);
+            btnHuy.Size = new Size(128, 39);
             btnHuy.TabIndex = 17;
             btnHuy.Text = "HỦY";
             btnHuy.UseVisualStyleBackColor = false;
@@ -112,9 +115,10 @@
             btnDangKy.BackColor = Color.FromArgb(0, 0, 192);
             btnDangKy.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 163);
             btnDangKy.ForeColor = SystemColors.ButtonHighlight;
-            btnDangKy.Location = new Point(108, 496);
+            btnDangKy.Location = new Point(94, 372);
+            btnDangKy.Margin = new Padding(3, 2, 3, 2);
             btnDangKy.Name = "btnDangKy";
-            btnDangKy.Size = new Size(146, 52);
+            btnDangKy.Size = new Size(128, 39);
             btnDangKy.TabIndex = 16;
             btnDangKy.Text = "ĐĂNG KÝ";
             btnDangKy.UseVisualStyleBackColor = false;
@@ -122,45 +126,48 @@
             // 
             // txtDapAnChoCauHoi
             // 
-            txtDapAnChoCauHoi.Location = new Point(57, 452);
+            txtDapAnChoCauHoi.Location = new Point(50, 339);
+            txtDapAnChoCauHoi.Margin = new Padding(3, 2, 3, 2);
             txtDapAnChoCauHoi.Name = "txtDapAnChoCauHoi";
             txtDapAnChoCauHoi.PlaceholderText = "Viết thường, không dấu, không khoảng cách...";
-            txtDapAnChoCauHoi.Size = new Size(395, 27);
+            txtDapAnChoCauHoi.Size = new Size(346, 23);
             txtDapAnChoCauHoi.TabIndex = 15;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            label8.Location = new Point(57, 424);
+            label8.Location = new Point(50, 318);
             label8.Name = "label8";
-            label8.Size = new Size(169, 25);
+            label8.Size = new Size(140, 20);
             label8.TabIndex = 14;
             label8.Text = "Đáp án cho câu hỏi:";
             // 
             // txtDatCauHoi
             // 
-            txtDatCauHoi.Location = new Point(57, 394);
+            txtDatCauHoi.Location = new Point(50, 296);
+            txtDatCauHoi.Margin = new Padding(3, 2, 3, 2);
             txtDatCauHoi.Name = "txtDatCauHoi";
             txtDatCauHoi.PlaceholderText = "Dành cho trường hợp quên mật khẩu...";
-            txtDatCauHoi.Size = new Size(395, 27);
+            txtDatCauHoi.Size = new Size(346, 23);
             txtDatCauHoi.TabIndex = 13;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            label7.Location = new Point(57, 366);
+            label7.Location = new Point(50, 274);
             label7.Name = "label7";
-            label7.Size = new Size(106, 25);
+            label7.Size = new Size(88, 20);
             label7.TabIndex = 12;
             label7.Text = "Đặt câu hỏi:";
             // 
             // txtXacNhanMatKhau
             // 
-            txtXacNhanMatKhau.Location = new Point(57, 336);
+            txtXacNhanMatKhau.Location = new Point(50, 252);
+            txtXacNhanMatKhau.Margin = new Padding(3, 2, 3, 2);
             txtXacNhanMatKhau.Name = "txtXacNhanMatKhau";
-            txtXacNhanMatKhau.Size = new Size(395, 27);
+            txtXacNhanMatKhau.Size = new Size(346, 23);
             txtXacNhanMatKhau.TabIndex = 11;
             txtXacNhanMatKhau.UseSystemPasswordChar = true;
             // 
@@ -168,18 +175,19 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            label6.Location = new Point(57, 308);
+            label6.Location = new Point(50, 231);
             label6.Name = "label6";
-            label6.Size = new Size(171, 25);
+            label6.Size = new Size(142, 20);
             label6.TabIndex = 10;
             label6.Text = "Xác Nhận Mật Khẩu:";
             // 
             // txtMatKhau
             // 
-            txtMatKhau.Location = new Point(57, 278);
+            txtMatKhau.Location = new Point(50, 208);
+            txtMatKhau.Margin = new Padding(3, 2, 3, 2);
             txtMatKhau.Name = "txtMatKhau";
             txtMatKhau.PlaceholderText = "Tối thiểu 8 ký tự...";
-            txtMatKhau.Size = new Size(395, 27);
+            txtMatKhau.Size = new Size(346, 23);
             txtMatKhau.TabIndex = 9;
             txtMatKhau.UseSystemPasswordChar = true;
             // 
@@ -187,27 +195,28 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            label5.Location = new Point(57, 250);
+            label5.Location = new Point(50, 188);
             label5.Name = "label5";
-            label5.Size = new Size(91, 25);
+            label5.Size = new Size(75, 20);
             label5.TabIndex = 8;
             label5.Text = "Mật Khẩu:";
             // 
             // txtKeyAdmin
             // 
-            txtKeyAdmin.Location = new Point(57, 220);
+            txtKeyAdmin.Location = new Point(50, 165);
+            txtKeyAdmin.Margin = new Padding(3, 2, 3, 2);
             txtKeyAdmin.Name = "txtKeyAdmin";
             txtKeyAdmin.PlaceholderText = "Key do Boss cung cấp...";
-            txtKeyAdmin.Size = new Size(395, 27);
+            txtKeyAdmin.Size = new Size(346, 23);
             txtKeyAdmin.TabIndex = 7;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            label4.Location = new Point(57, 192);
+            label4.Location = new Point(50, 144);
             label4.Name = "label4";
-            label4.Size = new Size(102, 25);
+            label4.Size = new Size(84, 20);
             label4.TabIndex = 6;
             label4.Text = "Key Admin:";
             // 
@@ -215,9 +224,10 @@
             // 
             cboTaoSoHuu.FormattingEnabled = true;
             cboTaoSoHuu.Items.AddRange(new object[] { "User", "Admin" });
-            cboTaoSoHuu.Location = new Point(57, 161);
+            cboTaoSoHuu.Location = new Point(50, 121);
+            cboTaoSoHuu.Margin = new Padding(3, 2, 3, 2);
             cboTaoSoHuu.Name = "cboTaoSoHuu";
-            cboTaoSoHuu.Size = new Size(171, 28);
+            cboTaoSoHuu.Size = new Size(150, 23);
             cboTaoSoHuu.TabIndex = 5;
             cboTaoSoHuu.SelectedIndexChanged += cboTaoSoHuu_SelectedIndexChanged;
             // 
@@ -225,27 +235,28 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            label3.Location = new Point(57, 133);
+            label3.Location = new Point(50, 100);
             label3.Name = "label3";
-            label3.Size = new Size(110, 25);
+            label3.Size = new Size(90, 20);
             label3.TabIndex = 4;
             label3.Text = "Tạo Sở Hữu:";
             label3.Click += label3_Click;
             // 
             // txtTaoTaiKhoan
             // 
-            txtTaoTaiKhoan.Location = new Point(57, 103);
+            txtTaoTaiKhoan.Location = new Point(50, 77);
+            txtTaoTaiKhoan.Margin = new Padding(3, 2, 3, 2);
             txtTaoTaiKhoan.Name = "txtTaoTaiKhoan";
-            txtTaoTaiKhoan.Size = new Size(395, 27);
+            txtTaoTaiKhoan.Size = new Size(346, 23);
             txtTaoTaiKhoan.TabIndex = 3;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            label2.Location = new Point(57, 75);
+            label2.Location = new Point(50, 56);
             label2.Name = "label2";
-            label2.Size = new Size(125, 25);
+            label2.Size = new Size(105, 20);
             label2.TabIndex = 2;
             label2.Text = "Tạo Tài Khoản:";
             // 
@@ -254,9 +265,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Black", 16.8F, FontStyle.Bold);
             label1.ForeColor = Color.Chocolate;
-            label1.Location = new Point(93, 17);
+            label1.Location = new Point(81, 13);
             label1.Name = "label1";
-            label1.Size = new Size(318, 38);
+            label1.Size = new Size(261, 31);
             label1.TabIndex = 1;
             label1.Text = "ĐĂNG KÝ TÀI KHOẢN";
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -266,17 +277,19 @@
             panel2.BackgroundImage = (Image)resources.GetObject("panel2.BackgroundImage");
             panel2.BackgroundImageLayout = ImageLayout.Stretch;
             panel2.Dock = DockStyle.Fill;
-            panel2.Location = new Point(3, 3);
+            panel2.Location = new Point(3, 2);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(527, 576);
+            panel2.Size = new Size(460, 439);
             panel2.TabIndex = 1;
             // 
             // frmsignup
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1066, 582);
+            ClientSize = new Size(933, 443);
             Controls.Add(tableLayoutPanel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmsignup";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Đăng Ký Tài Khoản";
