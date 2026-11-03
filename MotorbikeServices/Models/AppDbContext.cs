@@ -36,6 +36,10 @@ namespace MotorbikeServices.DAL.Models
         {
             base.OnModelCreating(modelBuilder);
 
+            // ==========================================
+            // 1. UNIQUE INDEX TÀI KHOẢN
+            // ==========================================
+
             modelBuilder.Entity<Admin>()
                 .HasIndex(a => a.TenTaiKhoan)
                 .IsUnique();
@@ -43,6 +47,11 @@ namespace MotorbikeServices.DAL.Models
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.TenTaiKhoan)
                 .IsUnique();
+
+
+            // ==========================================
+            // 2. QUY CHUẨN BẢO DƯỠNG
+            // ==========================================
 
             modelBuilder.Entity<QuyChuanBaoDuong>(entity =>
             {
@@ -60,12 +69,39 @@ namespace MotorbikeServices.DAL.Models
                     .HasForeignKey(e => e.DongXeId)
                     .OnDelete(DeleteBehavior.Restrict);
             });
-            modelBuilder.Entity<QuyChuanBaoDuong>()
-                .HasOne(q => q.DongXe)
-                .WithMany(d => d.QuyChuanBaoDuongs)
-                .HasForeignKey(q => q.DongXeId)
-                .OnDelete(DeleteBehavior.Restrict);
-            // Tắt xóa dây chuyền giữa ChiTietHoaDon và SanPham để sửa lỗi Error 1785
+
+
+            // ==========================================
+            // 3. QUY CHUẨN XE NGƯỜI DÙNG
+            // ==========================================
+
+            modelBuilder.Entity<QuyChuanXeNguoiDung>(entity =>
+            {
+                entity.HasKey(e => e.Id);
+
+                // Quan hệ với UserXe
+                entity.HasOne(e => e.UserXe)
+                    .WithMany()
+                    .HasForeignKey(e => e.UserXeId)
+                    .OnDelete(DeleteBehavior.NoAction);
+
+                // Quan hệ với QuyChuanBaoDuong
+                entity.HasOne(e => e.QuyChuanBaoDuong)
+                    .WithMany()
+                    .HasForeignKey(e => e.QuyChuanBaoDuongId)
+                    .OnDelete(DeleteBehavior.Cascade);
+
+                // Index
+                entity.HasIndex(e => e.UserXeId);
+
+                entity.HasIndex(e => e.QuyChuanBaoDuongId);
+            });
+
+
+            // ==========================================
+            // 4. CHI TIẾT HÓA ĐƠN - SẢN PHẨM
+            // ==========================================
+
             modelBuilder.Entity<ChiTietHoaDon>()
                 .HasOne(ct => ct.SanPham)
                 .WithMany()
